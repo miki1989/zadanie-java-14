@@ -10,11 +10,14 @@ public class MainTab {
 
         String [] tablica = new String[5];
         System.out.println("Podaj 5 imion:");
-        tablica[0] = scanner.nextLine();
-        tablica[1] = scanner.nextLine();
-        tablica[2] = scanner.nextLine();
-        tablica[3] = scanner.nextLine();
-        tablica[4] = scanner.nextLine();
+        //tablica[0] = scanner.nextLine();
+        //tablica[1] = scanner.nextLine();
+        //tablica[2] = scanner.nextLine();
+        //tablica[3] = scanner.nextLine();
+        //tablica[4] = scanner.nextLine();
+        for(int i = 0; i< tablica.length;i++){
+            tablica[i] = scanner.nextLine();
+        }
 
         /*
         int index = 4;
@@ -26,7 +29,7 @@ public class MainTab {
 
         scanner.close();
         */
-        for( int i = 4; i < tablica.length && i >= 0; i--) {
+        for( int i = tablica.length-1; i < tablica.length && i >= 0; i--) {
             System.out.println("Cześć " + tablica[i]);
         }
     }
